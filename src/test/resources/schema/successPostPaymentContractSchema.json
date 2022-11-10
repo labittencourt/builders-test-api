@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+    "end_to_end",
+    "conciliation_id",
+    "amount",
+    "authentication_code",
+    "created_at"
+  ],
+  "properties": {
+    "end_to_end": {
+      "type": "string",
+      "default": "",
+      "title": "The end_to_end Schema",
+      "examples": [
+        "c74205c0-5f7b-4ee2-8fab-ef646c408fff"
+      ]
+    },
+    "conciliation_id": {
+      "type": "string",
+      "default": "",
+      "title": "The conciliation_id Schema",
+      "examples": [
+        "95225008-6c6b-4310-821a-72dfe634c24e"
+      ]
+    },
+    "amount": {
+      "type": "integer",
+      "default": 0,
+      "title": "The amount Schema",
+      "examples": [
+        10
+      ]
+    },
+    "authentication_code": {
+      "type": "string",
+      "default": "",
+      "title": "The authentication_code Schema",
+      "examples": [
+        "4dc33709-69c5-4dea-bf96-473d7fe99444"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "default": "",
+      "title": "The created_at Schema",
+      "examples": [
+        "2022-11-09T09:25:03.028714"
+      ]
+    }
+  },
+  "examples": [{
+    "end_to_end": "c74205c0-5f7b-4ee2-8fab-ef646c408fff",
+    "conciliation_id": "95225008-6c6b-4310-821a-72dfe634c24e",
+    "amount": 10,
+    "authentication_code": "4dc33709-69c5-4dea-bf96-473d7fe99444",
+    "created_at": "2022-11-09T09:25:03.028714"
+  }]
+}

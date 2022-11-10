@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+    "account_id",
+    "document",
+    "name",
+    "amount",
+    "bank"
+  ],
+  "properties": {
+    "account_id": {
+      "type": "string",
+      "default": "",
+      "title": "The account_id Schema",
+      "examples": [
+        "62f87af90ba501353df77b95"
+      ]
+    },
+    "document": {
+      "type": "string",
+      "default": "",
+      "title": "The document Schema",
+      "examples": [
+        "41203066074"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "default": "",
+      "title": "The name Schema",
+      "examples": [
+        "Candidato"
+      ]
+    },
+    "amount": {
+      "type": "integer",
+      "default": 0,
+      "title": "The amount Schema",
+      "examples": [
+        45
+      ]
+    },
+    "bank": {
+      "type": "object",
+      "default": {},
+      "title": "The bank Schema",
+      "required": [
+        "name",
+        "ispb"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "default": "",
+          "title": "The name Schema",
+          "examples": [
+            "Caixa Economica Federal"
+          ]
+        },
+        "ispb": {
+          "type": "string",
+          "default": "",
+          "title": "The ispb Schema",
+          "examples": [
+            "0002"
+          ]
+        }
+      },
+      "examples": [{
+        "name": "Caixa Economica Federal",
+        "ispb": "0002"
+      }]
+    }
+  },
+  "examples": [{
+    "account_id": "62f87af90ba501353df77b95",
+    "document": "41203066074",
+    "name": "Candidato",
+    "amount": 45,
+    "bank": {
+      "name": "Caixa Economica Federal",
+      "ispb": "0002"
+    }
+  }]
+}

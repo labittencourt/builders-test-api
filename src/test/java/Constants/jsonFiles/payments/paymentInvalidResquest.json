@@ -1,0 +1,23 @@
+{
+  "endToEnd": "c74205c0-5f7b-4ee2-8fab-ef646c408fff",
+  "conciliation_id": "",
+  "amount": "10",
+  "recipient": {
+    "bank": {
+      "name": "Banco do Brasil",
+      "ispb": "0001"
+    },
+    "document": "70326165690",
+    "name": "Builders",
+    "key": "70326165690",
+    "key_type": "CPF"
+  },
+  "sender": {
+    "bank": {
+      "name": "Caixa Economica Federal",
+      "ispb": "0002"
+    },
+    "document": "41203066074",
+    "name": "Candidato"
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+    "end_to_end",
+    "conciliation_id",
+    "total_value",
+    "holder"
+  ],
+  "properties": {
+    "end_to_end": {
+      "type": "string",
+      "default": "",
+      "title": "The end_to_end Schema",
+      "examples": [
+        "c74205c0-5f7b-4ee2-8fab-ef646c408fff"
+      ]
+    },
+    "conciliation_id": {
+      "type": "string",
+      "default": "",
+      "title": "The conciliation_id Schema",
+      "examples": [
+        "95225008-6c6b-4310-821a-72dfe634c24e"
+      ]
+    },
+    "total_value": {
+      "type": "string",
+      "default": "",
+      "title": "The total_value Schema",
+      "examples": [
+        "10"
+      ]
+    },
+    "holder": {
+      "type": "object",
+      "default": {},
+      "title": "The holder Schema",
+      "required": [
+        "document",
+        "name",
+        "key",
+        "key_type",
+        "bank"
+      ],
+      "properties": {
+        "document": {
+          "type": "string",
+          "default": "",
+          "title": "The document Schema",
+          "examples": [
+            "70326165690"
+          ]
+        },
+        "name": {
+          "type": "string",
+          "default": "",
+          "title": "The name Schema",
+          "examples": [
+            "Builders"
+          ]
+        },
+        "key": {
+          "type": "string",
+          "default": "",
+          "title": "The key Schema",
+          "examples": [
+            "70326165690"
+          ]
+        },
+        "key_type": {
+          "type": "string",
+          "default": "",
+          "title": "The key_type Schema",
+          "examples": [
+            "CPF"
+          ]
+        },
+        "bank": {
+          "type": "object",
+          "default": {},
+          "title": "The bank Schema",
+          "required": [
+            "name",
+            "ispb"
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "default": "",
+              "title": "The name Schema",
+              "examples": [
+                "Banco do Brasil"
+              ]
+            },
+            "ispb": {
+              "type": "string",
+              "default": "",
+              "title": "The ispb Schema",
+              "examples": [
+                "0001"
+              ]
+            }
+          },
+          "examples": [{
+            "name": "Banco do Brasil",
+            "ispb": "0001"
+          }]
+        }
+      },
+      "examples": [{
+        "document": "70326165690",
+        "name": "Builders",
+        "key": "70326165690",
+        "key_type": "CPF",
+        "bank": {
+          "name": "Banco do Brasil",
+          "ispb": "0001"
+        }
+      }]
+    }
+  },
+  "examples": [{
+    "end_to_end": "c74205c0-5f7b-4ee2-8fab-ef646c408fff",
+    "conciliation_id": "95225008-6c6b-4310-821a-72dfe634c24e",
+    "total_value": "10",
+    "holder": {
+      "document": "70326165690",
+      "name": "Builders",
+      "key": "70326165690",
+      "key_type": "CPF",
+      "bank": {
+        "name": "Banco do Brasil",
+        "ispb": "0001"
+      }
+    }
+  }]
+}

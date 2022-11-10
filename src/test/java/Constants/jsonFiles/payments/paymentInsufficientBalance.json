@@ -1,0 +1,23 @@
+{
+  "endToEnd": "e3decb6a-a9af-4d9e-9652-0905002e002e",
+  "conciliation_id": "aa5f86f4-b6f6-4951-9145-3b0631cc0bd0",
+  "amount": "50",
+  "recipient": {
+    "bank": {
+      "name": "Banco do Brasil",
+      "ispb": "0001"
+    },
+    "document": "70326165690",
+    "name": "Builders",
+    "key": "70326165690",
+    "key_type": "CPF"
+  },
+  "sender": {
+    "bank": {
+      "name": "Caixa Economica Federal",
+      "ispb": "0002"
+    },
+    "document": "08746219846",
+    "name": "Darth Vader"
+  }
+}

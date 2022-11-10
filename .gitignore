@@ -1,0 +1,24 @@
+# Maven Reports
+/target/**
+
+# Intellij
+.run/
+.idea/
+.allure/
+*.iml
+*.iws
+.settings
+
+# Mac
+.DS_Store
+
+#Allure
+
+#Report
+/allure/**
+
+#Log4j
+log4j.log
+
+#jenv
+.java-version
