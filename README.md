@@ -19,7 +19,7 @@ It contains all Contract and Functional tests using RestAssured.
 
 Clone the project via the command line:
 ```
-git clone 
+git clone https://github.com/labittencourt/builders-test-api
 ```
 
 ## How to execute the tests
